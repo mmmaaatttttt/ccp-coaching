@@ -1,0 +1,17 @@
+:root {
+  --primary-lighten-3: #82b0a3;
+  --primary-lighten-2: #68a191;
+  --primary-lighten-1: #568a7b;
+  --primary: #467165;
+  --primary-darken-1: #37584f;
+  --primary-darken-2: #273f38;
+  --primary-darken-3: #182622;
+
+  --secondary-lighten-3: #f1d4bb;
+  --secondary-lighten-2: #eabe99;
+  --secondary-lighten-1: #e3a878;
+  --secondary: #dc9052;
+  --secondary-darken-1: #d57d34;
+  --secondary-darken-2: #ba6926;
+  --secondary-darken-3: #98561f;
+}
