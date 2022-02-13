@@ -1,0 +1,16 @@
+.header {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin-left: 0.25rem;
+  margin-right: auto;
+}
+
+.link {
+  margin: 0 1rem;
+}
