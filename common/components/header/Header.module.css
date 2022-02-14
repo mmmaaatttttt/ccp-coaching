@@ -4,13 +4,69 @@
   padding: 0.5rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  max-height: 5rem;
+  transition: max-height 0.5s;
+}
+
+.logo {
+  display: flex;
 }
 
 .title {
   margin-left: 0.25rem;
-  margin-right: auto;
 }
 
 .link {
   margin: 0 1rem;
+}
+
+.icon {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 1.3rem;
+  opacity: 1;
+  transform: rotate(0);
+}
+
+.icon.hideIcon {
+  opacity: 0;
+  transition: opacity 0.5s ease 0.25s, transform 0.5s;
+  transform: rotate(90deg);
+  pointer-events: none;
+}
+
+@media all and (max-width: 768px) {
+  .icon {
+    display: block;
+  }
+
+  .title,
+  .links {
+    display: none;
+  }
+
+  .link { 
+    margin-left: 0.5rem;
+  }
+
+  .links.expandedLinks {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    line-height: 1.8;
+    height: 0;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header.expanded {
+    max-height: 12rem;
+    transition: max-height 0.5s;
+  }
 }
