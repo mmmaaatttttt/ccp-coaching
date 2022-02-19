@@ -12,7 +12,6 @@ const Header = () => {
   const [expanded, setExpanded] = useState(false);
   const expand = () => setExpanded(true);
   const collapse = () => setExpanded(false);
-  console.log({ expanded });
   return (
     <header className={`${styles.header} ${expanded ? styles.expanded : ""}`}>
       <div className={styles.logo}>
