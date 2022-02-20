@@ -21,25 +21,68 @@
   margin: 0 1rem;
 }
 
-.icon {
-  cursor: pointer;
+.menu {
   display: none;
-  position: absolute;
-  right: 1rem;
-  top: 1.3rem;
-  opacity: 1;
-  transform: rotate(0);
+  cursor: pointer;
 }
 
-.icon.hideIcon {
+.menu > a {
+  display: block;
+  width: 1.75rem;
+  height: 1rem;
+  right: 1rem;
+  top: 1.3rem;
+  position: absolute;
+}
+
+.menu > a::after,
+.menu > a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 2px;
+  width: 100%;
+  background: white;
+  left: 0;
+  right: 0;
+  transition: all ease-out 0.3s;
+}
+
+.menu > a::after {
+  top: 100%;
+}
+
+.menu > a > i {
+  display: block;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 2px;
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transition: all ease-out 0.1s;
+}
+
+.menu > a.expanded::after {
+  transform: rotate(-45deg);
+  transform-origin: center;
+  top: 50%;
+}
+
+.menu > a.expanded::before {
+  transform: rotate(45deg);
+  transform-origin: center;
+  top: 50%;
+}
+
+.menu > a.expanded > i {
   opacity: 0;
-  transition: opacity 0.5s ease 0.25s, transform 0.5s;
-  transform: rotate(90deg);
-  pointer-events: none;
 }
 
 @media all and (max-width: 768px) {
-  .icon {
+  .menu {
     display: block;
   }
 
@@ -48,7 +91,7 @@
     display: none;
   }
 
-  .link { 
+  .link {
     margin-left: 0.5rem;
   }
 
@@ -67,6 +110,5 @@
 
   .header.expanded {
     max-height: 12rem;
-    transition: max-height 0.5s;
   }
 }
