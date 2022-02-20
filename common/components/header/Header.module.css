@@ -9,10 +9,12 @@
 
 .logo {
   display: flex;
+  cursor: pointer;
 }
 
 .title {
   margin-left: 0.25rem;
+  cursor: pointer;
 }
 
 .link {

@@ -12,10 +12,12 @@ const Header = () => {
   const toggleExpanded = () => setExpanded(expanded => !expanded);
   return (
     <header className={`${styles.header} ${expanded ? styles.expanded : ""}`}>
-      <div className={styles.logo}>
-        <Image src={logo} alt={`${title} logo`} width={50} height={50} />
-        <h2 className={styles.title}>{title}</h2>
-      </div>
+      <Link href="/">
+        <div className={styles.logo}>
+          <Image src={logo} alt={`${title} logo`} width={50} height={50} />
+          <h2 className={styles.title}>{title}</h2>
+        </div>
+      </Link>
       <div className={styles.menu}>
         <a className={expanded ? styles.expanded : ""} onClick={toggleExpanded}>
           <i>Menu</i>
