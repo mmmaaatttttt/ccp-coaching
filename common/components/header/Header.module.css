@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .logo {
@@ -30,9 +31,6 @@
   display: block;
   width: 1.75rem;
   height: 1rem;
-  right: 1rem;
-  top: 1.3rem;
-  position: absolute;
 }
 
 .menu > a::after,
@@ -83,7 +81,13 @@
 
 @media all and (max-width: 768px) {
   .menu {
-    display: block;
+    display: flex;
+    align-items: center;
+    top: 1.5625rem;
+    bottom: 0;
+    position: absolute;
+    right: 1rem;
+    height: 1rem;
   }
 
   .title,
