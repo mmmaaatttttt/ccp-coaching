@@ -4,7 +4,7 @@ export const links = [
     text: "About"
   },
   {
-    path: "/cocaching",
+    path: "/coaching",
     text: "Coaching"
   },
   {
