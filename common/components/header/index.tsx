@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/Link";
 import { motion } from "framer-motion";
-import logo from "public/logo.svg";
+import logo from "public/images/logo.svg";
 import { links } from "./constants";
 import styles from "./Header.module.css";
 
