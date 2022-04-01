@@ -3,18 +3,18 @@
   flex-direction: column;
 }
 
-.secondary {
-  background-color: var(--secondary);
+.introduction > div:first-child {
+  line-height: 0;
 }
 
-/* .footer {
+.secondary {
+  background-color: var(--secondary);
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
   align-items: center;
-} */
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1rem;
+}
 
 @media all and (min-width: 901px) {
   .introduction {
@@ -23,5 +23,9 @@
 
   .introduction > div {
     width: 50%;
+  }
+
+  .secondary {
+    padding: 1rem;
   }
 }
