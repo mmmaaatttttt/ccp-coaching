@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  font-family: "Jika", serif;
 }
 
 .logo {
@@ -20,6 +21,7 @@
 
 .link {
   margin: 0 1rem;
+  font-size: 1.25rem;
 }
 
 .menu {

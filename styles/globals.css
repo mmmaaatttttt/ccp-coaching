@@ -1,8 +1,18 @@
+@font-face {
+  font-family: "Jika";
+  src: url("/fonts/Jika.otf") format("OpenType");
+}
+
+@font-face {
+  font-family: "Hepta Slab";
+  src: url("/fonts/HeptaSlab-VariableFont_wght.ttf") format("TrueType");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "Hepta Slab", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -17,4 +27,13 @@ a {
 
 main.main {
   padding: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jika", serif;
 }
