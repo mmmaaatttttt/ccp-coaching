@@ -13,7 +13,7 @@ const Header = () => {
   const toggleExpanded = () => setExpanded(expanded => !expanded);
   const variants = useMemo(
     () => ({
-      expanded: { height: `${4.125 + links.length * 1.8}rem` },
+      expanded: { height: `${4.125 + links.length * 2.25}rem` },
       collapsed: { height: `${4.125}rem` }
     }),
     []
