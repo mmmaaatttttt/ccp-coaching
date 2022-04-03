@@ -1,9 +1,9 @@
-.introduction {
+.section {
   display: flex;
   flex-direction: column;
 }
 
-.introduction > div:first-child {
+.imageWrapper {
   line-height: 0;
 }
 
@@ -16,12 +16,16 @@
   padding: 3rem 1rem;
 }
 
+.col2 {
+  width: 100%;
+}
+
 @media all and (min-width: 901px) {
-  .introduction {
+  .section {
     flex-direction: row;
   }
 
-  .introduction > div {
+  .col2 {
     width: 50%;
   }
 
