@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import topImage from "public/images/stowlake.jpeg";
+import headerImage from "public/images/pexels-header.jpg";
+import descriptionImage from "public/images/pexels-description.jpg";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -18,7 +19,7 @@ const Home: NextPage = () => {
 
       <section className={styles.section}>
         <div className={`${styles.col2} ${styles.imageWrapper}`}>
-          <Image src={topImage} alt="Woman and child overlooking a lake" />
+          <Image src={headerImage} alt="Man and child in the mountains" />
         </div>
         <div className={`${styles.secondary} ${styles.col2}`}>
           <h1>
@@ -47,6 +48,19 @@ const Home: NextPage = () => {
             parenting your children with unconditional love that is rooted in
             science and understanding. It&apos;s about progress, not perfection!
           </p>
+        </div>
+        <div className={`${styles.col2} ${styles.descriptionImageWrapper}`}>
+          <Image
+            src={descriptionImage}
+            alt="Woman and child in front of pink background"
+            className={`${styles.imageDescription}`}
+            layout="responsive"
+            width="800"
+            height="1200"
+            sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+          />
         </div>
       </section>
     </>
