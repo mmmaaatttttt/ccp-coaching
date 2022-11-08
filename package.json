@@ -8,10 +8,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "framer-motion": "^6.2.8",
+    "framer-motion": "^7.6.5",
     "next": "^13.0.0",
     "react": "^18.2.0",
-    "react-bootstrap-icons": "^1.7.2",
     "react-calendly": "^3.0.1",
     "react-dom": "^18.2.0"
   },
