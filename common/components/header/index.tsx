@@ -24,11 +24,11 @@ const Header = () => {
       variants={variants}
       animate={expanded ? "expanded" : "collapsed"}
     >
-      <Link href="/">
-        <div className={styles.logo}>
+      <Link href="/" legacyBehavior>
+        <a className={styles.logo}>
           <Image src={logo} alt={`${title} logo`} width={50} height={50} />
           <h2 className={styles.title}>{title}</h2>
-        </div>
+        </a>
       </Link>
       <div className={styles.menu}>
         <a className={expanded ? styles.expanded : ""} onClick={toggleExpanded}>
@@ -39,7 +39,7 @@ const Header = () => {
         className={`${styles.links} ${expanded ? styles.expandedLinks : ""}`}
       >
         {links.map(({ path, text }) => (
-          <Link href={path} key={path}>
+          <Link href={path} key={path} legacyBehavior>
             <a className={styles.link}>{text}</a>
           </Link>
         ))}
