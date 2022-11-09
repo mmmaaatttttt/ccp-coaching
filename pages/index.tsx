@@ -21,7 +21,12 @@ const Home: NextPage = () => {
 
       <section className={styles.section}>
         <div className={`${styles.col2} ${styles.imageWrapper}`}>
-          <Image src={headerImage} alt="Man and child in the mountains" priority fill />
+          <Image
+            src={headerImage}
+            alt="Man and child in the mountains"
+            priority
+            fill
+          />
         </div>
         <div className={`${styles.secondary} ${styles.col2}`}>
           <h1>
@@ -30,14 +35,21 @@ const Home: NextPage = () => {
           </h1>
         </div>
       </section>
+
       <section className={styles.section}>
         <div className={`${styles.col2} p-5`}>
           <h2 className="center">
-            Do you find yourself being regularly triggered by your children?
+          Do you find yourself being regularly triggered by your children?
           </h2>
           <p className="mx-5">
             Do you react out of anger and later feel full of guilt and remorse?
-            Are you longing to change this pattern but not sure how?
+            Are you longing to change this pattern but are not sure how?
+          </p>
+          <p className="mx-5">
+            I am here to support you to connect with the why behind your
+            triggers so that you are able to make sense of the patterns at play
+            and create new conscious ways of responding and experiencing
+            parenting.
           </p>
           <p className="mx-5">
             I am here to help you connect with the <em>why</em> behind your
@@ -46,9 +58,10 @@ const Home: NextPage = () => {
             parenting.
           </p>
           <p className="mx-5">
-            Conscious Connected Parenting is about intention and commitment to
-            parenting your children with unconditional love that is rooted in
-            science and understanding. It&apos;s about progress, not perfection!
+            Conscious Connected Parenting is about an intention and commitment
+            to parent your children with unconditional love, rooted in science
+            and developmental understanding. It&apos;s about progress, not
+            perfection!
           </p>
         </div>
         <div className={`${styles.col2} ${styles.descriptionImageWrapper}`}>
