@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 
       <section className={styles.section}>
         <div className={`${styles.col2} ${styles.imageWrapper}`}>
-          <Image src={headerImage} alt="Man and child in the mountains" />
+          <Image src={headerImage} alt="Man and child in the mountains" priority fill />
         </div>
         <div className={`${styles.secondary} ${styles.col2}`}>
           <h1>
@@ -53,13 +53,9 @@ const Home: NextPage = () => {
           <Image
             src={descriptionImage}
             alt="Woman and child in front of pink background"
+            width={300}
+            height={450}
             className={`${styles.imageDescription}`}
-            layout="responsive"
-            width="800"
-            height="1200"
-            sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
           />
         </div>
       </section>
