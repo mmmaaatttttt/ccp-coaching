@@ -1,9 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/Link";
 import Image from "next/image";
+import Button from "common/components/button";
 import headerImage from "public/images/pexels-header.jpg";
 import descriptionImage from "public/images/pexels-description.jpg";
-import styles from "../styles/Home.module.css";
+import styles from "./Home.module.css";
 
 const Home: NextPage = () => {
   return (
