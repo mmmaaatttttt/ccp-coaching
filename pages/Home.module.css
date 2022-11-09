@@ -1,6 +1,12 @@
 .section {
   display: flex;
   flex-direction: column;
+  border-radius: 2rem;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .imageWrapper {
@@ -41,9 +47,14 @@
   border-radius: 50px;
 }
 
+.program {
+  max-width: 400px;
+}
+
 @media all and (min-width: 901px) {
   .section {
     flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .col2 {

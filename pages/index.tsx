@@ -36,45 +36,91 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className={styles.section}>
-        <div className={`${styles.col2} p-5`}>
-          <h2 className="center">
-            Do you find yourself being regularly triggered by your children?
-          </h2>
-          <p className="mx-5">
-            Do you react out of anger and later feel full of guilt and remorse?
-            Are you longing to change this pattern but are not sure how?
-          </p>
-          <p className="mx-5">
-            I am here to support you to connect with the why behind your
-            triggers so that you are able to make sense of the patterns at play
-            and create new conscious ways of responding and experiencing
-            parenting.
-          </p>
-          <p className="mx-5">
-            I am here to help you connect with the <em>why</em> behind your
-            triggers, so that you are able to make sense of the patterns at play
-            and create new, conscious ways of responding to and experiencing
-            parenting.
-          </p>
-          <p className="mx-5">
-            Conscious Connected Parenting is about an intention and commitment
-            to parent your children with unconditional love, rooted in science
-            and developmental understanding. It&apos;s about progress, not
-            perfection!
-          </p>
+      <div className={styles.container}>
+        <section className={styles.section}>
+          <div className={`${styles.col2} p-5`}>
+            <h2 className="center">
+              Do you find yourself being regularly triggered by your children?
+            </h2>
+            <p className="mx-5">
+              Do you react out of anger and later feel full of guilt and
+              remorse? Are you longing to change this pattern but are not sure
+              how?
+            </p>
+            <p className="mx-5">
+              I am here to support you to connect with the why behind your
+              triggers so that you are able to make sense of the patterns at
+              play and create new conscious ways of responding and experiencing
+              parenting.
+            </p>
+            <p className="mx-5">
+              I am here to help you connect with the <em>why</em> behind your
+              triggers, so that you are able to make sense of the patterns at
+              play and create new, conscious ways of responding to and
+              experiencing parenting.
+            </p>
+            <p className="mx-5">
+              Conscious Connected Parenting is about an intention and commitment
+              to parent your children with unconditional love, rooted in science
+              and developmental understanding. It&apos;s about progress, not
+              perfection!
+            </p>
+          </div>
+          <div className={`${styles.col2} ${styles.descriptionImageWrapper}`}>
+            <Image
+              src={descriptionImage}
+              alt="Woman and child in front of pink background"
+              width={300}
+              height={450}
+              className={`${styles.imageDescription}`}
+            />
+            <Button href="/about">Learn more about Meg</Button>
+          </div>
+        </section>
+
+        <section className={`${styles.section} bg-primary m-5 px-5 py-3`}>
+          <div className={styles.program}>
+            <h2 className="center mt-1">Private Coaching</h2>
+            <ul>
+              <li className="my-2">
+                12 weeks of weekly one hour coaching at a time convenient to you
+              </li>
+              <li className="my-2">
+                Guidance through the Ultimate Parenting Success Course
+              </li>
+              <li className="my-2">
+                Strategies and tools customized for your family{" "}
+              </li>
+              <li className="my-2">
+                Develop an understanding of the patterns at play that are
+                keeping you from being the parent you want to be
+              </li>
+            </ul>
+          </div>
+          <div className={styles.program}>
+            <h2 className="center mt-1">Group Coaching</h2>
+            <ul>
+              <li className="my-2">
+                12 weeks of weekly one hour coaching at a set time with a group
+                of 3 to 5 parents
+              </li>
+              <li className="my-2">
+                Guidance through the Ultimate Parenting Success Course
+              </li>
+              <li className="my-2">
+                An opportunity to connect with other parents who share similar
+                goals and grow this community
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <div className="center">
+          <Button href="/coaching" variant="tertiary">
+            Learn more about the program
+          </Button>
         </div>
-        <div className={`${styles.col2} ${styles.descriptionImageWrapper}`}>
-          <Image
-            src={descriptionImage}
-            alt="Woman and child in front of pink background"
-            width={300}
-            height={450}
-            className={`${styles.imageDescription}`}
-          />
-          <Button href="/about">Learn more about Meg</Button>
-        </div>
-      </section>
+      </div>
     </>
   );
 };
