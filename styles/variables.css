@@ -1,10 +1,13 @@
 :root {
-  --primary-light: #68a191;
+  --primary-light: #5a9081;
   --primary: #467165;
-  --primary-dark: #273f38;
+  --primary-dark: #325249;
 
+  --secondary-light: #efd163;
   --secondary: #eac435;
+  --secondary-dark: #d6ae16;
 
-  
-  --tertiary: #f7d6e0;
+  --tertiary-light: #f7d6e0;
+  --tertiary: #efabc0;
+  --tertiary-dark: #e780a0;
 }
