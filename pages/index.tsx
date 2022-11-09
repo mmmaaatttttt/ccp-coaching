@@ -39,7 +39,7 @@ const Home: NextPage = () => {
       <section className={styles.section}>
         <div className={`${styles.col2} p-5`}>
           <h2 className="center">
-          Do you find yourself being regularly triggered by your children?
+            Do you find yourself being regularly triggered by your children?
           </h2>
           <p className="mx-5">
             Do you react out of anger and later feel full of guilt and remorse?
@@ -72,6 +72,7 @@ const Home: NextPage = () => {
             height={450}
             className={`${styles.imageDescription}`}
           />
+          <Button href="/about">Learn more about Meg</Button>
         </div>
       </section>
     </>
