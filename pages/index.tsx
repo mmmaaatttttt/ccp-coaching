@@ -156,9 +156,56 @@ const Home: NextPage = () => {
         </section>
 
         <div className="center">
-          <Button href="/endorsements">
-            Read more endorsements
-          </Button>
+          <Button href="/endorsements">Read more endorsements</Button>
+        </div>
+      </div>
+      <div className="bg-tertiary mt-5 pb-5">
+        <div className={styles.container}>
+          <section className={`${styles.section} ${styles.contact}`}>
+            <div className="m-4 mt-5 p-4">
+              <h2>You CAN</h2>
+              <ul className="p-4">
+                <li className="mb-3">
+                  Solve everyday problems with effective strategies that
+                  don&apos;t rely on punishments or rewards
+                </li>
+                <li className="mb-3">
+                  Meet both you and your childrens&apos; needs
+                </li>
+                <li className="mb-3">
+                  Show up with more patience, presence, and compassion
+                </li>
+              </ul>
+            </div>
+            <div className="m-4 mt-5 p-4">
+              <h2>Eliminate</h2>
+              <ul className="p-4">
+                <li className="mb-3">
+                  Yelling, shaming, and fear-based tactics
+                </li>
+                <li className="mb-3">Power struggles</li>
+                <li className="mb-3">
+                  Cycles of reactionary behavior and guilt
+                </li>
+                <li className="mb-3">
+                  Patterns and beliefs that may be keeping you from
+                  authentically connecting with your child
+                </li>
+              </ul>
+            </div>
+            <div className="m-4 mt-5 p-4">
+              <h2>Find More</h2>
+              <ul className="p-4">
+                <li className="mb-3">Cooperation and connection</li>
+                <li className="mb-3">Ease, peace, and teamwork</li>
+                <li className="mb-3">Confidence and empowerment</li>
+                <li className="mb-3">Joy!</li>
+              </ul>
+            </div>
+          </section>
+          <div className="center pt-4">
+            <Button href="/contact">Contact me</Button>
+          </div>
         </div>
       </div>
     </>
