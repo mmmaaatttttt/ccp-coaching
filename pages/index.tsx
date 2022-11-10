@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { Sunrise, CloudSun, Sun } from "react-bootstrap-icons";
 import Button from "common/components/button";
 import headerImage from "public/images/pexels-header.jpg";
 import descriptionImage from "public/images/pexels-description.jpg";
@@ -163,22 +164,18 @@ const Home: NextPage = () => {
         <div className={styles.container}>
           <section className={`${styles.section} ${styles.contact}`}>
             <div className="m-4 mt-5 p-4">
-              <h2>You CAN</h2>
+              <h2>Find More</h2>
+              <Sunrise width="2.5rem" height="2.5rem" />
               <ul className="p-4">
-                <li className="mb-3">
-                  Solve everyday problems with effective strategies that
-                  don&apos;t rely on punishments or rewards
-                </li>
-                <li className="mb-3">
-                  Meet both you and your childrens&apos; needs
-                </li>
-                <li className="mb-3">
-                  Show up with more patience, presence, and compassion
-                </li>
+                <li className="mb-3">Cooperation and connection</li>
+                <li className="mb-3">Ease, peace, and teamwork</li>
+                <li className="mb-3">Confidence and empowerment</li>
+                <li className="mb-3">Joy!</li>
               </ul>
             </div>
             <div className="m-4 mt-5 p-4">
               <h2>Eliminate</h2>
+              <CloudSun width="2.5rem" height="2.5rem" />
               <ul className="p-4">
                 <li className="mb-3">
                   Yelling, shaming, and fear-based tactics
@@ -194,12 +191,19 @@ const Home: NextPage = () => {
               </ul>
             </div>
             <div className="m-4 mt-5 p-4">
-              <h2>Find More</h2>
+              <h2>You CAN</h2>
+              <Sun width="2.5rem" height="2.5rem" />
               <ul className="p-4">
-                <li className="mb-3">Cooperation and connection</li>
-                <li className="mb-3">Ease, peace, and teamwork</li>
-                <li className="mb-3">Confidence and empowerment</li>
-                <li className="mb-3">Joy!</li>
+                <li className="mb-3">
+                  Solve everyday problems with effective strategies that
+                  don&apos;t rely on punishments or rewards
+                </li>
+                <li className="mb-3">
+                  Meet both you and your childrens&apos; needs
+                </li>
+                <li className="mb-3">
+                  Show up with more patience, presence, and compassion
+                </li>
               </ul>
             </div>
           </section>
