@@ -350,3 +350,7 @@ h2 {
 .bg-tertiary {
   background-color: var(--tertiary);
 }
+
+.text-right {
+  text-align: right;
+}

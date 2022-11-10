@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Link from "next/Link";
 import Image from "next/image";
 import Button from "common/components/button";
 import headerImage from "public/images/pexels-header.jpg";
 import descriptionImage from "public/images/pexels-description.jpg";
+import endorsementsImage from "public/images/endorsements.png";
 import styles from "./Home.module.css";
 
 const Home: NextPage = () => {
@@ -74,7 +74,9 @@ const Home: NextPage = () => {
               height={450}
               className={`${styles.imageDescription}`}
             />
-            <Button href="/about">Learn more about Meg</Button>
+            <Button href="/about" variant="secondary">
+              Learn more about Meg
+            </Button>
           </div>
         </section>
 
@@ -118,6 +120,44 @@ const Home: NextPage = () => {
         <div className="center">
           <Button href="/coaching" variant="tertiary">
             Learn more about the program
+          </Button>
+        </div>
+
+        <section
+          className={`${styles.section} ${styles.endorsements} mt-4 p-4`}
+        >
+          <Image
+            src={endorsementsImage}
+            alt="Cartoon of woman and child hugging"
+            width={300}
+            height={300}
+          />
+          <div className="px-3">
+            <p>
+              Meg leads with empathy, and is able to listen to my parenting
+              struggles without judgment. She has great insight, and is able to
+              create a space where I felt comfortable discussing challenging
+              topics. In short, Meg is an incredible coach!
+            </p>
+            <p className="text-right">
+              <em>-Matt</em>
+            </p>
+          </div>
+          <div className="px-3">
+            <p>
+              Meg is such a wonderful and thoughtful parenting coach. She helped
+              me discover things in myself I never knew and it has helped my
+              parenting in so many ways. I can&apos;t recommend her enough!
+            </p>
+            <p className="text-right">
+              <em>-Lindy</em>
+            </p>
+          </div>
+        </section>
+
+        <div className="center">
+          <Button href="/endorsements">
+            Read more endorsements
           </Button>
         </div>
       </div>

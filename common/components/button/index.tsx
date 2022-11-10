@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/Link";
 import Variant from "common/types/variant";
 import styles from "./Button.module.css";
 
@@ -16,12 +16,8 @@ const Button = ({
   variant = "primary"
 }: ButtonProps) =>
   href ? (
-    <Link
-      className={`${styles.button} ${styles[variant]}`}
-      href={href}
-      onClick={onClick}
-    >
-      {children}
+    <Link href={href} onClick={onClick} legacyBehavior>
+      <a className={`${styles.button} ${styles[variant]}`}>{children}</a>
     </Link>
   ) : (
     <button className={`${styles.button} ${styles[variant]}`} onClick={onClick}>
