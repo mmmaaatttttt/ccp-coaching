@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Jika";
-  src: url("/fonts/Jika.otf") format("OpenType");
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand-VariableFont_wght.ttf") format("OpenType");
 }
 
 @font-face {
@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Jika", serif;
+  font-family: "Quicksand", serif;
   font-weight: normal;
 }
 
