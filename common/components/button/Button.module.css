@@ -5,6 +5,7 @@
   font-size: 1rem;
   border: none;
   font-weight: bold;
+  font-family: "Quicksand", serif;
 }
 
 .primary {
@@ -20,7 +21,7 @@
 
 .secondary {
   background-color: var(--secondary);
-  color: #fff;
+  color: #000;
   transition: background-color 0.2s;
 }
 
