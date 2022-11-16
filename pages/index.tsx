@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { Sunrise, CloudSun, Sun } from "react-bootstrap-icons";
 import Button from "common/components/button";
 import headerImage from "public/images/pexels-header.jpg";
@@ -21,46 +22,57 @@ const Home: NextPage = () => {
       </Head>
 
       <section className={styles.section}>
-        <div className={`${styles.col2} ${styles.imageWrapper}`}>
+        <div className={`${styles.imageWrapper}`}>
           <Image
             src={headerImage}
             alt="Man and child in the mountains"
-            priority
             fill
+            priority
           />
         </div>
-        <div className={`${styles.secondary} ${styles.col2}`}>
+        <motion.div
+          className={styles.bubble}
+          initial={{ opacity: 0, right: "-6vw" }}
+          animate={{ opacity: 1, right: "0vw" }}
+          transition={{ duration: 0.5 }}
+        >
           <h1>
             Find joy in parenting, <br />
             through connection and unconditional love
           </h1>
-        </div>
+        </motion.div>
       </section>
 
       <div className={styles.container}>
-        <section className={styles.section}>
+        <motion.section
+          className={styles.section}
+          initial={{ opacity: 0, top: "50px" }}
+          whileInView={{ opacity: 1, top: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ amount: 0.1 }}
+        >
           <div className={`${styles.col2} p-5`}>
             <h2 className="center">
               Do you find yourself being regularly triggered by your children?
             </h2>
-            <p className="mx-5">
+            <p>
               Do you react out of anger and later feel full of guilt and
               remorse? Are you longing to change this pattern but are not sure
               how?
             </p>
-            <p className="mx-5">
+            <p>
               I am here to support you to connect with the why behind your
               triggers so that you are able to make sense of the patterns at
               play and create new conscious ways of responding and experiencing
               parenting.
             </p>
-            <p className="mx-5">
+            <p>
               I am here to help you connect with the <em>why</em> behind your
               triggers, so that you are able to make sense of the patterns at
               play and create new, conscious ways of responding to and
               experiencing parenting.
             </p>
-            <p className="mx-5">
+            <p>
               Conscious Connected Parenting is about an intention and commitment
               to parent your children with unconditional love, rooted in science
               and developmental understanding. It&apos;s about progress, not
@@ -75,13 +87,19 @@ const Home: NextPage = () => {
               height={450}
               className={`${styles.imageDescription}`}
             />
-            <Button href="/about" variant="secondary">
+            <Button href="/about" variant="secondary" className="mt-4">
               Learn more about Meg
             </Button>
           </div>
-        </section>
+        </motion.section>
 
-        <section className={`${styles.section} bg-primary m-5 px-5 py-3`}>
+        <motion.section
+          className={`${styles.section} bg-primary m-5 px-5 py-3`}
+          initial={{ opacity: 0, left: "50px" }}
+          whileInView={{ opacity: 1, left: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ amount: 0.25 }}
+        >
           <div className={styles.program}>
             <h2 className="center mt-1">Private Coaching</h2>
             <ul>
@@ -116,16 +134,19 @@ const Home: NextPage = () => {
               </li>
             </ul>
           </div>
-        </section>
-
+        </motion.section>
         <div className="center">
           <Button href="/coaching" variant="tertiary">
             Learn more about the program
           </Button>
         </div>
 
-        <section
+        <motion.section
           className={`${styles.section} ${styles.endorsements} mt-4 p-4`}
+          initial={{ opacity: 0, right: "50px" }}
+          whileInView={{ opacity: 1, right: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ amount: 0.25 }}
         >
           <Image
             src={endorsementsImage}
@@ -154,8 +175,7 @@ const Home: NextPage = () => {
               <em>-Lindy</em>
             </p>
           </div>
-        </section>
-
+        </motion.section>
         <div className="center">
           <Button href="/endorsements">Read more endorsements</Button>
         </div>

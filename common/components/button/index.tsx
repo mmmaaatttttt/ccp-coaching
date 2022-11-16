@@ -4,12 +4,14 @@ import styles from "./Button.module.css";
 
 type ButtonProps = {
   children: React.ReactNode;
+  className?: string;
   variant?: Variant;
   href?: string;
   onClick?: (evt: React.MouseEvent<HTMLElement>) => void;
 };
 
 const Button = ({
+  className,
   children,
   href,
   onClick,
@@ -17,10 +19,13 @@ const Button = ({
 }: ButtonProps) =>
   href ? (
     <Link href={href} onClick={onClick} legacyBehavior>
-      <a className={`${styles.button} ${styles[variant]}`}>{children}</a>
+      <a className={`${styles.button} ${styles[variant]} ${className}`}>{children}</a>
     </Link>
   ) : (
-    <button className={`${styles.button} ${styles[variant]}`} onClick={onClick}>
+    <button
+      className={`${styles.button} ${styles[variant]} ${className}`}
+      onClick={onClick}
+    >
       {children}
     </button>
   );
