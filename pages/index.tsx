@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Sunrise, CloudSun, Sun } from "react-bootstrap-icons";
+import BaseHead from "common/components/base_head";
 import Button from "common/components/button";
 import headerImage from "public/images/pexels-header.jpg";
 import descriptionImage from "public/images/pexels-description.jpg";
@@ -12,15 +12,7 @@ import styles from "./Home.module.css";
 const Home: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Home - Conscious Connected Parenting</title>
-        <meta
-          name="description"
-          content="Conscious Connected Parenting - parent coaching services provided by Megan Lane."
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+      <BaseHead prefix="Home" />
       <section className={styles.section}>
         <div className={`${styles.imageWrapper}`}>
           <Image
