@@ -51,6 +51,16 @@ ul {
   text-align: center;
 }
 
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flow-root;
+}
+
+.rounded {
+  border-radius: 50px;
+}
+
 /* Spacing rules */
 
 .pl-0,
@@ -348,7 +358,18 @@ ul {
 
 .bg-secondary {
   background-color: var(--secondary);
-  color: white;
+}
+
+.color-tertiary {
+  color: var(--tertiary);
+}
+
+.color-primary {
+  color: var(--primary);
+}
+
+.color-secondary {
+  color: var(--secondary);
 }
 
 .bg-tertiary {
