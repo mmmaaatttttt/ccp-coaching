@@ -6,11 +6,6 @@
   position: relative;
 }
 
-.container {
-  max-width: 1320px;
-  margin: 0 auto;
-}
-
 .imageWrapper {
   line-height: 0;
   position: relative;

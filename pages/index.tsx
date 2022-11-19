@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         </SlideFade>
       </section>
 
-      <div className={styles.container}>
+      <div className={`container ${styles.container}`}>
         <SlideFade from="bottom" duration={1} amount={0.1} scroll>
           <section className={styles.section}>
             <div className={`${styles.col2} p-5`}>
@@ -164,7 +164,7 @@ const Home: NextPage = () => {
           <section className={`${styles.section} ${styles.contact}`}>
             <div className="m-4 mt-5 p-4">
               <h2>Find More</h2>
-              <Sunrise width="2.5rem" height="2.5rem" />
+              <Sunrise width="2.5rem" height="2.5rem" className="color-secondary" />
               <ul className="p-4">
                 <li className="mb-3">Cooperation and connection</li>
                 <li className="mb-3">Ease, peace, and teamwork</li>
@@ -174,7 +174,7 @@ const Home: NextPage = () => {
             </div>
             <div className="m-4 mt-5 p-4">
               <h2>Eliminate</h2>
-              <CloudSun width="2.5rem" height="2.5rem" />
+              <CloudSun width="2.5rem" height="2.5rem" className="color-secondary" />
               <ul className="p-4">
                 <li className="mb-3">
                   Yelling, shaming, and fear-based tactics
@@ -191,7 +191,7 @@ const Home: NextPage = () => {
             </div>
             <div className="m-4 mt-5 p-4">
               <h2>You CAN</h2>
-              <Sun width="2.5rem" height="2.5rem" />
+              <Sun width="2.5rem" height="2.5rem" className="color-secondary" />
               <ul className="p-4">
                 <li className="mb-3">
                   Solve everyday problems with effective strategies that
