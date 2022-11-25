@@ -65,8 +65,8 @@ const Home: NextPage = () => {
               <Image
                 src={descriptionImage}
                 alt="Woman and child in front of pink background"
-                width={300}
-                height={450}
+                width={320}
+                height={480}
                 className={`${styles.imageDescription}`}
               />
               <Button href="/about" variant="secondary" className="mt-4">
