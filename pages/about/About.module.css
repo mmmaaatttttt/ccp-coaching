@@ -37,7 +37,7 @@
 
   .about1 section {
     padding-right: 6rem;
-    /* padding-bottom: 7rem; */
+    padding-bottom: 40rem;
     max-width: 750px;
   }
 
@@ -53,7 +53,7 @@
     align-items: center;
     position: relative;
     justify-content: center;
-    margin-top: -6rem;
+    margin-top: -44rem;
   }
 
   .about2 section {
