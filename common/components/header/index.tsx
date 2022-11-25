@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import Image from "next/image";
-import Link from "next/Link";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import logo from "public/images/logo.svg";
 import { links } from "./constants";
