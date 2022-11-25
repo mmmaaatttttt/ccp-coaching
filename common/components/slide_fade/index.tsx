@@ -7,6 +7,7 @@ type SlideFadeProps = {
   amount?: number | "some" | "all";
   children: React.ReactNode;
   className?: string;
+  delay?: number;
   duration?: number;
   from: Direction;
   offset?: string;
@@ -17,6 +18,7 @@ const SlideFade = ({
   amount = "some",
   children,
   className = "",
+  delay = 0,
   duration = 0.5,
   from,
   offset = "50px",
@@ -29,7 +31,7 @@ const SlideFade = ({
   return (
     <motion.div
       className={`${styles.slideFade} ${className}`}
-      transition={{ duration }}
+      transition={{ delay, duration }}
       viewport={{ amount }}
       {...animateProps}
     >
