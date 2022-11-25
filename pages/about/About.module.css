@@ -1,0 +1,26 @@
+.img {
+  border-radius: 50px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media all and (min-width: 901px) {
+  .img {
+    display: inline-block;
+    margin: 0;
+    margin-left: 1rem;
+    position: absolute;
+    z-index: 100;
+  }
+
+  .about1 {
+    margin: 100px 0 0 auto;
+    max-width: 66vw;
+    padding-bottom: 500px;
+    padding-left: 5vw;
+  }
+
+  .about2 {
+    
+  }
+}
