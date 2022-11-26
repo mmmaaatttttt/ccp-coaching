@@ -27,12 +27,6 @@
     display: flex;
     margin-top: 3rem;
     position: relative;
-    /* justify-content: center; */
-  }
-
-  .about1 section,
-  .about2 section {
-    padding: 2rem 3rem;
   }
 
   .about1 section {

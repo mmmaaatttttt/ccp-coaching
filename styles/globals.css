@@ -384,3 +384,11 @@ li {
 .text-right {
   text-align: right;
 }
+
+@media all and (min-width: 901px) {
+  .bg-primary,
+  .bg-secondary,
+  .bg-tertiary {
+    padding: 2rem 3rem;
+  }
+}
