@@ -40,7 +40,7 @@ const Header = () => {
       >
         {links.map(({ path, text }) => (
           <Link href={path} key={path} legacyBehavior>
-            <a className={styles.link}>{text}</a>
+            <a className={styles.link} onClick={toggleExpanded}>{text}</a>
           </Link>
         ))}
       </div>
