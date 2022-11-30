@@ -7,7 +7,7 @@ import coaching from "public/images/coaching.png";
 import jaiLogo from "public/images/jai-logo.png";
 import styles from "./Coaching.module.css";
 
-const About: NextPage = () => {
+const Coaching: NextPage = () => {
   return (
     <>
       <BaseHead prefix="Coaching" />
@@ -121,4 +121,4 @@ const About: NextPage = () => {
   );
 };
 
-export default About;
+export default Coaching;
