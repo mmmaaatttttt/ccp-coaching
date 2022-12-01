@@ -7,8 +7,8 @@ import Footer from "common/components/footer";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Header />
       <main className="main">
+        <Header />
         <Component {...pageProps} />
       </main>
       <Footer />

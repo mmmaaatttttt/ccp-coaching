@@ -9,9 +9,16 @@
 }
 
 html,
-body {
+body,
+#__next {
   padding: 0;
   margin: 0;
+  height: 100%;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -391,4 +398,8 @@ li {
   .bg-tertiary {
     padding: 2rem 3rem;
   }
+}
+
+.main {
+  flex: 1 0 auto;
 }
