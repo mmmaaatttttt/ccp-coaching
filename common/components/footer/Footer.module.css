@@ -1,9 +1,18 @@
 .footer {
-  height: 4.125rem;
-  background-color: var(--primary);
-  display: flex;
   align-items: center;
+  background-color: var(--primary);
   color: white;
-  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
   flex-shrink: 0;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+@media all and (min-width: 500px) {
+  .footer {
+    flex-direction: row;
+    height: 4.125rem;
+    padding: 0 1rem;
+  }
 }
