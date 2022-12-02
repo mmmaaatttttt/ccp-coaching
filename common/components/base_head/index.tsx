@@ -6,13 +6,23 @@ type BaseHeadProps = {
 
 const BaseHead = ({ prefix }: BaseHeadProps) => {
   const title = `${prefix} - Conscious Connected Parenting`;
+  const description =
+    "Conscious Connected Parenting - parent coaching services provided by Megan Lane";
+  const image = "/images/social.png";
   return (
     <Head>
       <title>{title}</title>
+      <meta property="og:title" content={title} />
       <meta
-        name="description"
-        content="Conscious Connected Parenting - parent coaching services provided by Megan Lane."
+        property="og:description"
+        content="And a social description for our cool page"
       />
+      <meta name="description" content={description} />
+      <meta property="og:image" content={image} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={image} />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
