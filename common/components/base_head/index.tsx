@@ -13,10 +13,7 @@ const BaseHead = ({ prefix }: BaseHeadProps) => {
     <Head>
       <title>{title}</title>
       <meta property="og:title" content={title} />
-      <meta
-        property="og:description"
-        content="And a social description for our cool page"
-      />
+      <meta property="og:description" content={description} />
       <meta name="description" content={description} />
       <meta property="og:image" content={image} />
       <meta name="twitter:card" content="summary_large_image" />
