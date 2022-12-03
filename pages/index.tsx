@@ -33,7 +33,7 @@ const Home: NextPage = () => {
       <div className={`container ${styles.container}`}>
         <SlideFade from="bottom" duration={1} amount={0.1} scroll>
           <section className={styles.section}>
-            <div className={`${styles.col2} p-5`}>
+            <div className={`${styles.col2} p-3`}>
               <h2 className="center">
                 Do you find yourself being regularly triggered by your children?
               </h2>
@@ -77,21 +77,21 @@ const Home: NextPage = () => {
         </SlideFade>
 
         <SlideFade from="right" duration={1} amount={0.25} scroll>
-          <section className={`${styles.section} bg-primary m-5 px-5 py-3`}>
+          <section className={`${styles.section} bg-primary m-3 p-3`}>
             <div className={styles.program}>
               <h2 className="center mt-1">Private Coaching</h2>
               <ul>
-                <li className="my-2">
+                <li className="my-2 ml-2">
                   12 weeks of weekly one hour coaching at a time convenient to
                   you
                 </li>
-                <li className="my-2">
+                <li className="my-2 ml-2">
                   Guidance through the Ultimate Parenting Success Course
                 </li>
-                <li className="my-2">
+                <li className="my-2 ml-2">
                   Strategies and tools customized for your family{" "}
                 </li>
-                <li className="my-2">
+                <li className="my-2 ml-2">
                   Develop an understanding of the patterns at play that are
                   keeping you from being the parent you want to be
                 </li>
@@ -100,14 +100,14 @@ const Home: NextPage = () => {
             <div className={styles.program}>
               <h2 className="center mt-1">Group Coaching</h2>
               <ul>
-                <li className="my-2">
+                <li className="my-2 ml-2">
                   12 weeks of weekly one hour coaching at a set time with a
                   group of 3 to 5 parents
                 </li>
-                <li className="my-2">
+                <li className="my-2 ml-2">
                   Guidance through the Ultimate Parenting Success Course
                 </li>
-                <li className="my-2">
+                <li className="my-2 ml-2">
                   An opportunity to connect with other parents who share similar
                   goals and grow this community
                 </li>
@@ -123,7 +123,7 @@ const Home: NextPage = () => {
 
         <SlideFade from="left" duration={1} amount={0.25} scroll>
           <section
-            className={`${styles.section} ${styles.endorsements} mt-4 p-4`}
+            className={`${styles.section} ${styles.endorsements} mt-4 p-3`}
           >
             <Image
               src={endorsementsImage}
@@ -162,7 +162,7 @@ const Home: NextPage = () => {
       <div className="bg-tertiary mt-5 pb-5">
         <div className={styles.container}>
           <section className={`${styles.section} ${styles.contact}`}>
-            <div className="m-4 mt-5 p-4">
+            <div className="m-4 mt-5 p-4  ">
               <h2>Find More</h2>
               <Sunrise width="2.5rem" height="2.5rem" className="color-secondary" />
               <ul className="p-4">
