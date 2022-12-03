@@ -24,6 +24,8 @@ const SlideFade = ({
   offset = "50px",
   scroll = false
 }: SlideFadeProps) => {
+  const isMobile =
+    typeof window === "undefined" ? false : window.innerWidth < 768;
   const animateProps = {
     initial: { opacity: 0, [from]: `-${offset}` },
     [scroll ? "whileInView" : "animate"]: { opacity: 1, [from]: 0 }
@@ -31,7 +33,7 @@ const SlideFade = ({
   return (
     <motion.div
       className={`${styles.slideFade} ${className}`}
-      transition={{ delay, duration }}
+      transition={{ delay: isMobile ? 0 : delay, duration }}
       viewport={{ amount }}
       {...animateProps}
     >
