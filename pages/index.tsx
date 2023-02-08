@@ -63,7 +63,7 @@ const Home: NextPage = () => {
                 height={480}
                 className={`${styles.imageDescription}`}
               />
-              <Button href="/about" variant="secondary" className="mt-4">
+              <Button href="/about" variant="secondary" className="my-4">
                 Learn more about Meg
               </Button>
             </div>
@@ -108,7 +108,7 @@ const Home: NextPage = () => {
               </ul>
             </div>
           </section>
-          <div className="center">
+          <div className="center mt-5">
             <Button href="/coaching" variant="tertiary">
               Learn more about the program
             </Button>
@@ -200,7 +200,7 @@ const Home: NextPage = () => {
               </ul>
             </div>
           </section>
-          <div className="center pt-4">
+          <div className="center mt-4 mb-3">
             <Button href="/contact">Contact me</Button>
           </div>
         </div>
