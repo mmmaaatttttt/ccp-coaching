@@ -43,12 +43,6 @@ const Home: NextPage = () => {
                 how?
               </p>
               <p>
-                I am here to support you to connect with the why behind your
-                triggers so that you are able to make sense of the patterns at
-                play and create new conscious ways of responding and
-                experiencing parenting.
-              </p>
-              <p>
                 I am here to help you connect with the <em>why</em> behind your
                 triggers, so that you are able to make sense of the patterns at
                 play and create new, conscious ways of responding to and
